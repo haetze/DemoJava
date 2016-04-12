@@ -14,18 +14,22 @@ class test{
 	}
 }
 
+//simple example class
 class Rectangle {
+    //state
     private int height;
     private int width;
-
+    //constructor
     public Rectangle(int h, int w){
 	height = h;
 	width  = w;
     }
+
+    //method
     public int Area(){
 	return height*width;
     }
-
+    //method
     public void Print(){
 	for(int i = 0; i < width; i++)
 	    System.out.print("_");
