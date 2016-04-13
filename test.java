@@ -36,7 +36,7 @@ class Rectangle {
 	System.out.println();
 	for(int n = 0; n < height; n++){
 	    System.out.print("|");
-	    for(int k = 0; k < width-1; k++)
+	    for(int k = 0; k < width-2; k++)
 		System.out.print(" ");
 	    System.out.print("|");
 	    System.out.println();
