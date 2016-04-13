@@ -5,9 +5,8 @@ import java.io.InputStreamReader;
 
 class test{
 	public static void main(String[] args){
-	    Rectangle rect;
-	    rect = new Rectangle(Integer.parseInt(args[0]),
-				 Integer.parseInt(args[1]));
+	    Square rect;
+	    rect = new Square(Integer.parseInt(args[0]));
 	    System.out.println(rect.Area());
 	    rect.Print();
 	    System.out.println();
@@ -29,6 +28,7 @@ class Rectangle {
     public int Area(){
 	return height*width;
     }
+
     //method
     public void Print(){
 	for(int i = 0; i < width; i++)
@@ -44,6 +44,12 @@ class Rectangle {
 
 	for(int m = 0; m < width; m++)
 	    System.out.print("-");
+    }
+}
+
+class Square extends Rectangle {
+    public Square(int length){
+	super(length, length);
     }
 }
 
