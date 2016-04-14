@@ -3,8 +3,12 @@
 class Program {
 
     public static void main(String[] argv){
-	Rectangle rect;
-	rect = new Rectangle(5, 5);
-	rect.Print();
+        Square sq;
+	sq = new Square(5);
+	sq.Print();
+    }
+
+    public void function(Rectangle r){
+	r.Print();
     }
 }
