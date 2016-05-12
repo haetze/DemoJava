@@ -1,0 +1,32 @@
+class Compress{
+
+    public static void main(String argv[]){
+
+
+
+    }
+
+
+    public static void compress(int [] arr){
+	int next0 = 0;
+	int nextVal = 1;
+
+	while(next0 < arr.length && nextVal < arr.length){
+
+	    if(arr[next0] != 0){
+		next0++;
+		nextVal++;
+	    }else{
+
+		if(arr[nextVal] != 0){
+
+		    arr[next0] = arr[nextVal];
+		    arr[nextVal] = 0;
+		    next0++;
+		}else{
+		    nextVal++;
+		}
+	    }
+	}
+    }
+}
