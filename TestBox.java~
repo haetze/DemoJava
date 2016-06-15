@@ -1,0 +1,11 @@
+class TestBox{
+
+    public static void main(String argv[]){
+
+	Box a = new Box(30,20,10);
+	Box b = new Box(11,21,31);
+
+	System.out.println(a.encloses(b));
+
+    }
+}

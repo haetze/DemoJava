@@ -1,0 +1,29 @@
+class TestatRecursion{
+
+
+    public static void main(String argv[]){
+
+	System.out.println(digitSum(1234));
+	System.out.println(harm(5);
+
+    }
+
+
+    public static int digitSum(int n){
+
+	if(n < 10)
+	    return n;
+
+	return (n % 10)+digitSum(n/10);
+    }
+
+    public static double harm(int n){
+
+	if(n <= 1)
+	    return 1;
+
+	return (1/n)+harm(n-1);
+
+    }
+
+}

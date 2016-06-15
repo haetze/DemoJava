@@ -1,0 +1,4 @@
+class Box {
+    private int breite;
+    private int hoehe;
+    private int tiefe;
